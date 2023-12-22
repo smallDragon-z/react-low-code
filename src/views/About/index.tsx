@@ -1,4 +1,10 @@
+import { Suspense } from 'react';
+
 const About = () => {
-  return <div>About</div>;
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <div>About</div>
+    </Suspense>
+  );
 };
 export default About;
