@@ -1,9 +1,5 @@
 import LayoutCenterWrapper from './style.ts';
 
-const Layout = () => (
-  <LayoutCenterWrapper>
-    <main>LayoutCenter</main>
-  </LayoutCenterWrapper>
-);
+const Layout = () => <LayoutCenterWrapper>LayoutCenter</LayoutCenterWrapper>;
 
 export default Layout;

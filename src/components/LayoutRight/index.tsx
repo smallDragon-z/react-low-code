@@ -1,9 +1,5 @@
 import LayoutRightWrapper from './style.ts';
 
-const Layout = () => (
-  <LayoutRightWrapper>
-    <aside>LayoutRight</aside>
-  </LayoutRightWrapper>
-);
+const Layout = () => <LayoutRightWrapper>LayoutRight</LayoutRightWrapper>;
 
 export default Layout;

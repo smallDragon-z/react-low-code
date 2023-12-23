@@ -1,17 +1,15 @@
 import styled from '@emotion/styled';
 
 export default styled.div`
-  .no-found-page-box {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: #416475;
-  }
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #416475;
 
   .error-container {
     display: flex;
