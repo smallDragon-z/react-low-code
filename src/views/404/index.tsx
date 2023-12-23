@@ -1,7 +1,7 @@
 import NotFoundWrapper from './style.tsx';
 import { Link } from 'react-router-dom';
 
-const NoFoundPage = () => (
+const NotFoundPage = () => (
   <NotFoundWrapper>
     <main className="no-found-page-box">
       <section className="error-container">
@@ -19,4 +19,4 @@ const NoFoundPage = () => (
     </main>
   </NotFoundWrapper>
 );
-export default NoFoundPage;
+export default NotFoundPage;

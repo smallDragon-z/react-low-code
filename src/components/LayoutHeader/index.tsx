@@ -18,7 +18,7 @@ const LayoutHeader = () => {
           </li>
         </ul>
       </nav>
-      <div className="avator">avatar</div>
+      <div className="avatar">avatar</div>
     </LayoutHeaderWrapper>
   );
 };

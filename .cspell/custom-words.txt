@@ -19,3 +19,6 @@ system-ui
 Avenir
 Helvetica
 Arial
+couriernew
+colordancing
+shadowsdancing

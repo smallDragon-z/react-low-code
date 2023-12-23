@@ -1,17 +1,10 @@
-import { lazy } from 'react';
 import { createBrowserRouter } from 'react-router-dom';
+import LazyComponent from '@/components/LazyComponent';
 import App from '@/App.tsx';
 // 同步加载页面
-import NoFoundPage from '@/views/404';
-// import AppLayout from '@/views/AppLayout';
-// import Action from '@/views/Action';
-// import Data from '@/views/Data';
-
+import AppLayout from '@/views/AppLayout';
 // 懒加载页面
-const AppLayout = lazy(() => import('@/views/AppLayout'));
-const Action = lazy(() => import('@/views/Action'));
-const Data = lazy(() => import('@/views/Data'));
-const About = lazy(() => import('@/views/About'));
+import { Action, About, NotFoundPage, Data } from '@/lazy';
 
 const router = createBrowserRouter([
   {
@@ -24,11 +17,11 @@ const router = createBrowserRouter([
       },
       {
         path: 'action',
-        element: <Action />
+        element: <LazyComponent children={<Action />} />
       },
       {
         path: 'data',
-        element: <Data />
+        element: <LazyComponent children={<Data />} />
       }
     ]
   },
@@ -38,7 +31,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/*',
-    element: <NoFoundPage />
+    element: <LazyComponent children={<NotFoundPage />} />
   }
 ]);
 
